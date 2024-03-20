@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A0A60232BAA3EDD005C8F4D /* DockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0A60222BAA3EDD005C8F4D /* DockView.swift */; };
+		3A3E7EE62BAB855800E6CC39 /* ProgressiveBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E7EE52BAB855800E6CC39 /* ProgressiveBlurView.swift */; };
 		3AB700B02BA983760064D701 /* AppItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB700AF2BA983760064D701 /* AppItem.swift */; };
 		3ADD8DCF2BA8E54800DC0DCD /* CarouselApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD8DCE2BA8E54800DC0DCD /* CarouselApp.swift */; };
 		3ADD8DD12BA8E54800DC0DCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD8DD02BA8E54800DC0DCD /* ContentView.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		3A0A60222BAA3EDD005C8F4D /* DockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockView.swift; sourceTree = "<group>"; };
+		3A3E7EE52BAB855800E6CC39 /* ProgressiveBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressiveBlurView.swift; sourceTree = "<group>"; };
 		3AB700AF2BA983760064D701 /* AppItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppItem.swift; sourceTree = "<group>"; };
 		3ADD8DCB2BA8E54800DC0DCD /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADD8DCE2BA8E54800DC0DCD /* CarouselApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselApp.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				3AB700AF2BA983760064D701 /* AppItem.swift */,
 				3A0A60222BAA3EDD005C8F4D /* DockView.swift */,
 				3ADD8DD02BA8E54800DC0DCD /* ContentView.swift */,
+				3A3E7EE52BAB855800E6CC39 /* ProgressiveBlurView.swift */,
 				3ADD8DD22BA8E54900DC0DCD /* Assets.xcassets */,
 				3ADD8DD42BA8E54900DC0DCD /* Preview Content */,
 			);
@@ -269,6 +272,7 @@
 				3A0A60232BAA3EDD005C8F4D /* DockView.swift in Sources */,
 				3ADD8DD12BA8E54800DC0DCD /* ContentView.swift in Sources */,
 				3ADD8DCF2BA8E54800DC0DCD /* CarouselApp.swift in Sources */,
+				3A3E7EE62BAB855800E6CC39 /* ProgressiveBlurView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

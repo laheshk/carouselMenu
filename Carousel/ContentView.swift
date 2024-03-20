@@ -45,15 +45,19 @@ struct ContentView: View {
                     
                 }
                 
-                .padding(.top, 50)
+                .padding(.top, 100)
                 
             }
             
+            .overlay(ProgressiveBlurComponent(), alignment: .top)
+            .edgesIgnoringSafeArea(.top)
             .overlay(DockView(), alignment: .bottom)
             .edgesIgnoringSafeArea(.bottom)
             .persistentSystemOverlays(.hidden)
+            
         
         }
+        
     }
     
     private func reverseScale(for geometry: GeometryProxy) -> CGFloat {
