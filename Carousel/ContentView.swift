@@ -13,20 +13,20 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
-                LazyVStack(spacing: 80) { // Adjust spacing to 12px
+                LazyVStack(spacing: 70) { // Adjust spacing to 12px
                     ForEach(appItems) { appItem in
                         GeometryReader { geometry in
                             HStack {
                                 Group { // Wrap both Circle and Text in a Group
                                     Image(appItem.imageName)
                                         .resizable()
-                                        .frame(width: 40, height: 40)
+                                        .frame(width: 36, height: 36)
                                         .foregroundColor(colorScheme == .dark ? .yellow : .blue) // Adapt colors
                                         .background(Color.gray) // Subtle grey background
                                         .cornerRadius(20) // Rounded corners
                                     
                                     Text(appItem.appName)
-                                        .font(.system(size: 18))
+                                        .font(.system(size: 16))
                                         .fontWeight(.medium)
                                         .foregroundColor(colorScheme == .dark ? .white : .black) // Adapt text color
                                     
@@ -51,6 +51,7 @@ struct ContentView: View {
             
             .overlay(DockView(), alignment: .bottom)
             .edgesIgnoringSafeArea(.bottom)
+            .persistentSystemOverlays(.hidden)
         
         }
     }
@@ -61,10 +62,10 @@ struct ContentView: View {
         let scale: CGFloat
         if yOffset < screenHeight / 2 {
             // Scale down when above the center
-            scale = max(1 + abs(yOffset / 500), 0.5)
+            scale = max(1 + abs(yOffset / 450), 0.5)
         } else {
             // Scale down when below the center
-            scale = max(1 + abs((screenHeight - yOffset) / 500), 0.5)
+            scale = max(1 + abs((screenHeight - yOffset) / 450), 0.5)
         }
         return scale
     }

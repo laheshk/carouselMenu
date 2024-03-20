@@ -15,7 +15,7 @@ struct DockView: View {
             // Replace these image names with your actual app icons
             AppIconView(imageName: "phone")
             Spacer()
-            AppIconView(imageName: "messages")
+            AppIconView(imageName: "twitter")
             Spacer()
             AppIconView(imageName: "arc")
             Spacer()
@@ -25,7 +25,7 @@ struct DockView: View {
         .padding( 16)
 //                .frame(height: 80) // Set dock height
                 .background(.thinMaterial) // Ultrathin background
-                .cornerRadius(26)
+                .cornerRadius(34)
                 .padding(16) // Add 12px margin at the bottom
                 
                 
@@ -40,7 +40,7 @@ struct AppIconView: View {
         Image(imageName)
             .resizable()
             .frame(width: 60, height: 60)
-            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+            .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
 //            .shadow(radius: 5)
     }
 }
